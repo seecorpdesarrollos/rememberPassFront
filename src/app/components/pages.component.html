@@ -1,0 +1,23 @@
+<div id="main-wrapper">
+    <app-navbar></app-navbar>
+    <app-sider-menu></app-sider-menu>
+
+    <div class="page-wrapper">
+
+
+        <div class="container-fluid">
+            <app-breadcrumb></app-breadcrumb>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <router-outlet></router-outlet>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-footer></app-footer>
+    </div>
+</div>
