@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: ' http://localhost/rememberPass/',
+  url: ' http://localhost:8080/rememberPassBack/',
 
 };
 
