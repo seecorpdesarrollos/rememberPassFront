@@ -1,5 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+
 // rutas
 import { APP_ROUTES } from './app.routes';
 
@@ -15,6 +21,10 @@ import { PreloadComponent } from './components/preload/preload.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { PagesComponent } from './components/pages.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RegisterComponent } from './login/register.component';
+import { AuthOutGuard } from './auth-out.guard';
+import { AuthGuard } from './auth.guard';
+import { LoginService } from './services/login.service';
 
 @NgModule({
   declarations: [
@@ -27,13 +37,21 @@ import { FooterComponent } from './components/footer/footer.component';
     PreloadComponent,
     BreadcrumbComponent,
     PagesComponent,
-    FooterComponent
+    FooterComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
+    HttpModule,
+    BrowserAnimationsModule,
+    FormsModule,
     APP_ROUTES
   ],
-  providers: [],
+  providers: [
+    AuthOutGuard,
+    AuthGuard,
+    LoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
