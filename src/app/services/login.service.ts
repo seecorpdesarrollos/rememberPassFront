@@ -25,9 +25,9 @@ export class LoginService {
     return this.http.post(this.url +"auth/login.php?id=getLogin" , usuario)
     .pipe(
       map((e)=> {
-        return e.json(
-
-      )}),
+      
+        return e.json()
+      }),
       catchError((e)=> throwError(e))
       
       );
