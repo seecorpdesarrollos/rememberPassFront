@@ -76,7 +76,8 @@ mostrar(){
        if (res  !== false ) {
          this.loginIn=true;
        setTimeout(()=>{
-         localStorage.setItem('token', this.usuario.emailUser);
+          localStorage.setItem('token', this.usuario.emailUser);
+          localStorage.setItem('nombre', res.nombreUser);
           localStorage.setItem('idUser', res.idUser);
           localStorage.setItem('last', res.dataUpdate);
           this.ruta.navigate(['/dashboard']);

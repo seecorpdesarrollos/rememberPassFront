@@ -1,0 +1,9 @@
+.modal-content {
+    background-color: transparent;
+    margin-top: 300px;
+    border: none
+}
+
+.salir {
+    color: blue;
+}

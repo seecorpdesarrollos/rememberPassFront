@@ -113,8 +113,8 @@
                                 <div class="dw-user-box">
                                     <div class="u-img"><img src="assets/images/users/1.jpg" alt="user"></div>
                                     <div class="u-text">
-                                        <h4>Steave Jobs</h4>
-                                        <p class="text-muted">varun@gmail.com</p><a href="pages-profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                        <h4 class="capitalize">{{user.nombreUser}}</h4>
+                                        <p class="text-muted">{{user.emailUser}}</p><a href="pages-profile.html" class="btn btn-rounded btn-danger btn-sm">Ver Perfil</a></div>
                                 </div>
                             </li>
                             <li role="separator" class="divider"></li>
@@ -124,7 +124,7 @@
                             <li role="separator" class="divider"></li>
                             <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a (click)=logout()><i class="fa fa-power-off"></i> Logout</a></li>
+                            <li class="cursor"><a (click)=logout()><i class="fa fa-power-off cursor"></i> Salir</a></li>
                         </ul>
                     </div>
                 </li>
@@ -132,3 +132,15 @@
         </div>
     </nav>
 </header>
+
+
+
+<!-- Modal de salir de la sesion -->
+
+<div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <i class="fa fa-spinner fa-spin fa-4x salir"></i>
+        </div>
+    </div>
+</div>
