@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  url: ' http://localhost/rememberPass/',
+ // url: ' http://localhost/rememberPassBack/',   //url para mi casa 
+  url: ' http://localhost:8080/rememberPassBack/',  // url para la mac que se enciende ente puerto.
 
 };
 

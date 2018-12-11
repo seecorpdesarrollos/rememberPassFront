@@ -16,7 +16,7 @@ const appRoutes: Routes = [
 
       { path: 'dashboard', component: DashboardComponent},
       { path: 'preload', component: PreloadComponent},
-      { path: 'preload', component: PreloadComponent },
+      // { path: 'preload', component: PreloadComponent },
       { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     ]
   },

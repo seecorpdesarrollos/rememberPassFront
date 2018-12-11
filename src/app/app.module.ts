@@ -25,6 +25,7 @@ import { RegisterComponent } from './login/register.component';
 import { AuthOutGuard } from './auth-out.guard';
 import { AuthGuard } from './auth.guard';
 import { LoginService } from './services/login.service';
+import { AlertComponent } from './components/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { LoginService } from './services/login.service';
     BreadcrumbComponent,
     PagesComponent,
     FooterComponent,
-    RegisterComponent
+    RegisterComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,

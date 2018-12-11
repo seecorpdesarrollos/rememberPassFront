@@ -5,7 +5,7 @@
                 <a href="javascript:void(0)" class="text-center db"><img src="assets/images/logo-icon.png" alt="Home" /><br/><img src="../assets/images/logo-text.png" alt="Home" /></a>
                 <div class="form-group m-t-40">
                     <div class="col-xs-12">
-                        <input class="form-control" autocomplete="off" name="emailUser" ngModel type="text" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Correo electrónico">
+                        <input class="form-control" #emailUserFocus autocomplete="off" name="emailUser" ngModel type="text" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Correo electrónico">
                     </div>
                 </div>
                 <div class="form-group">
@@ -81,4 +81,5 @@
             </form>
         </div>
     </div>
+    <app-alert *ngIf="alerta"></app-alert>
 </section>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from 'src/app/models/login.model';
 
@@ -18,16 +18,15 @@ export class NavbarComponent implements OnInit {
   }
 
   user = new User;
-  dataUser(){
-   this.user.nombreUser= localStorage.getItem('nombre');
-   this.user.emailUser = localStorage.getItem('token');
- 
-   
+  dataUser(){   
+   this.user.nameUser= localStorage.getItem('nombre');
+   this.user.emailUser= localStorage.getItem('token'); 
+
   }
 
   logout(){
    
-     $('#logout').modal( { backdrop: 'static', keyboard: false} , 'show');
+      $('#logout').modal( { backdrop: 'static', keyboard: false} , 'show');
      setTimeout(()=>{
        $('#logout').modal('hide');
         localStorage.clear();
